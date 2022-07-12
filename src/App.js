@@ -51,10 +51,10 @@ axios.get(url).then((response)=>{
 
         <div className="tempwrap">
 <div className="min">
-<strong>Min-Temperature<br/>{(data?.main?.temp_min+(-273.15)).toFixed(2)}</strong>
+<strong>Min-Temperature<br/>{(data?.main?.temp_min+(-273.15)).toFixed(2)}&deg;C</strong>
 </div>
 <div className="max">
-<strong>Min-Temperature<br/>{(data?.main?.temp_max+(-273.15)).toFixed(2)}</strong>
+<strong>Min-Temperature<br/>{(data?.main?.temp_max+(-273.15)).toFixed(2)}&deg;C</strong>
 </div>
 
 
