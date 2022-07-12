@@ -54,7 +54,7 @@ axios.get(url).then((response)=>{
 <strong>Min-Temperature<br/>{(data?.main?.temp_min+(-273.15)).toFixed(2)}&deg;C</strong>
 </div>
 <div className="max">
-<strong>Min-Temperature<br/>{(data?.main?.temp_max+(-273.15)).toFixed(2)}&deg;C</strong>
+<strong>Max-Temperature<br/>{(data?.main?.temp_max+(-273.15)).toFixed(2)}&deg;C</strong>
 </div>
 
 
