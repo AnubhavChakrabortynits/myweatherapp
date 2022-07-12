@@ -61,9 +61,9 @@ axios.get(url).then((response)=>{
 </div>
         <div className="bottom">
 
-        
+        {((data?.main?.temp)+(-273.15)).toFixed(2)}
         <div className="feels">
-          <strong>FEELS LIKE <br/>{data?.main?.feels_like}&deg;F</strong>
+          <strong>FEELS LIKE <br/>{(data?.main?.feels_like + (-273.15)).toFixed(2)}&deg;C</strong>
         </div>
 <div className="humidity">
 <strong>HUMIDITY<br/>{data?.main?.humidity}%</strong>
