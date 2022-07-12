@@ -7,7 +7,7 @@ const [data,setData]=useState()
 const [location,setLocation]=useState('')
 
 useEffect(()=>{
-  axios.get(`https://api.openweathermap.org/data/2.5/weather?q=dallas&appid=b6b546e0642e56a001d2cbb723109e08`).then((response)=>{
+  axios.get(`https://api.openweathermap.org/data/2.5/weather?q=new york&appid=b6b546e0642e56a001d2cbb723109e08`).then((response)=>{
     setData(response.data);
     console.log(response.data);
   })
