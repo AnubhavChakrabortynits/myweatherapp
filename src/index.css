@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+.app{
+  width:100%;
+  position: relative;
+  height:100vh;
+  color:aliceblue;
+  background-color: rgba(9, 9, 9, 0.2);
+  
+  
+
+}
+.app::before{
+  position: absolute;
+  content: '';
+  background:url('https://images.unsplash.com/photo-1550850839-8dc894ed385a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=60') ;
+  background-position:center ;
+  z-index: -1;
+  width: 100%;
+  height:100% ;
+  background-size:cover ;
+  top:0;
+  left:0;
+
+}
+*{
+  margin:0;
+}
+.container{
+  margin: auto;
+  max-width: 100rem;
+  position: relative;
+  top:10%;
+  display:flex ;
+  justify-content:space-between ;
+  flex-direction: column;
+}
+.top{
+  text-align: center;
+}
+
+.app .top{
+  width:100%;
+  margin:2rem auto;
+}
+.app .bottom{
+  text-align: center;
+}
+.app .description{
+  position: fixed;
+  width:50%;
+right:-60px;
+transform:rotate(-90deg) ;
+
+}
+
+.app .bottom{
+  display:flex;
+  justify-content: space-around;
+width: 70%;
+position: relative;
+margin:1rem auto;
+background-color: rgba(208, 208, 189, 0.2);
+font-weight: bolder;
+bottom:-50px;
+
+align-items: center;
+font-family: 'Bitter', serif;
+}
+
+
+#name{
+  font-family: 'Bitter', serif;
+  font-size: 2.5rem;
+}
+
+.wrapsearch{
+  width:10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top:5%;
+  left:10%;
+
+
+}
+.wrapsearch input{
+  text-align: center;
+  height:2rem;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 2px 2px 2px black,-2px -2px 2px black;
+  background-color: rgba(67, 67, 66, 0.2);
+  color: black;
+  
+ 
+}
+
+
+::placeholder{
+  color:aliceblue;
+  font-weight: bolder;
+  font-size:.9rem;
+}
+
+.tempwrap{
+  display: flex;
+ justify-content:space-around ;
+  width:70%;
+  margin:2rem auto;
+ 
+  background-color: rgba(67, 67, 66, 0.2);
+
+}
+.min,.max{
+  text-align: center;
+}
+.min strong{
+  font-size: small;
+ 
+}
+.max strong{
+  font-size: small;
+ 
+}
