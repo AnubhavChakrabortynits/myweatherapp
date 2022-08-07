@@ -141,3 +141,20 @@ font-family: 'Bitter', serif;
 .min,.max{
   text-align: center;
 }
+
+@media  (max-height:470px) {
+  .app .bottom{
+    position:fixed;
+    left:3.5rem;
+    top:50%;
+    transform: rotate(90deg);
+    background-color: rgba(208, 208, 189, 0.2);
+    height:.2rem  ;
+    width:1.5rem ;
+    font-size: small;
+    justify-content:space-evenly ;
+    text-shadow: 1px 1px 1px black;
+    padding:.7rem ;
+  
+  }
+}
